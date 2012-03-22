@@ -79,61 +79,53 @@ This logic is essentially first determining whether the shape is round-ish, and 
 
 3. Long
 
-i. Placement: Curved 
+	i. Placement: Curved 
 
-ii. Try Horizontal First = true 
+	ii. Try Horizontal First = true 
 
-iii. May Stack = true 
+	iii. May Stack = true 
 
-iv. Character Spacing = up to 200%
+	iv. Character Spacing = up to 200%
 
+4. Long and Skinny
 
-Long and Skinny
+	i. Placement: Boundary 
 
+	ii. May Place Outside = true 
 
-i. Placement: Boundary 
+	iii. Offset = 4 pts 
 
-ii. May Place Outside = true 
+	iv. Char. Space = up to 240% 
 
-iii. Offset = 4 pts 
+	v. Background Label = true
 
-iv. Char. Space = up to 240% 
+5. Splotch
 
-v. Background Label = true
+	i. Placement: Curved 
 
+	ii. Char. Space = up to 300% 
 
-Splotch
+	iii.Reduce Font from 14 pts. to 10 pts. by 1 pt. increments
 
+6. Snaky or Pronged
 
-i. Placement: Curved 
+	i. Placement: Curved 
 
-ii. Char. Space = up to 300% 
+	ii. May overrun by 12 pts 
 
-iii.Reduce Font from 14 pts. to 10 pts. by 1 pt. increments
+	iii. Char. Space = up to 400%
 
-Snaky or Pronged
+7. Snaky or Pronged and Skinny
 
+	i.	Placement: Boundary
 
-i. Placement: Curved 
+	ii.	May Place Outside = true 
 
-ii. May overrun by 12 pts 
+	iii.	Offset = 4 pts
 
-iii. Char. Space = up to 400%
+	iv.	Char. Space = up to 240% 
 
-
-Snaky or Pronged and Skinny
-
-i.	Placement: Boundary
-
-
-ii.	May Place Outside = true 
-
-iii.	Offset = 4 pts
-
-
-iv.	Char. Space = up to 240% 
-
-v.	Background Label = true
+	v.	Background Label = true
 
 
 **Sources and further reading:**
