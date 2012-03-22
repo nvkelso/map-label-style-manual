@@ -46,11 +46,11 @@ Elseif RatioL2W >= 8 and MBRArea <= 10% LabelType = "Long and Skinny"
 
 Else 
 
-  If RatioL2W < 4 and MBRArea >= 20% Label type = "Splotch" 
+	If RatioL2W < 4 and MBRArea >= 20% Label type = "Splotch" 
 
-  Elseif RatioL2W < 8 and MBRArea > 12% Label Type = "Snaky or Pronged" 
+	Elseif RatioL2W < 8 and MBRArea > 12% Label Type = "Snaky or Pronged" 
 
-  Elseif RatioL2W < 8 and MBRArea <=12% Label Type = "Snaky or Pronged and Skinny"
+	Elseif RatioL2W < 8 and MBRArea <=12% Label Type = "Snaky or Pronged and Skinny"
 
 
 This logic is essentially first determining whether the shape is round-ish, and if not, if it is oblong or long, and if not, if it is a splotch, or snaky or pronged. The specific thresholds may need to be tuned to spe- cific cartographic requirements.
