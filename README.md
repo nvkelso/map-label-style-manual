@@ -1,6 +1,6 @@
-**Map Label Style Manual**
+***Map Label Style Manual***
 
-NAMES
+**NAMES**
 
 When we cannot fit the full, formal name of feature we can often label a shorter version.
 
@@ -10,7 +10,7 @@ For over 3,000 abbreviations for general map features and roads specifically:
 
 * abbreviations/abbreviations.ods
 
-PLACEMENTS
+**PLACEMENTS**
 
 Once we have a collection of long label and shorter fallback label, we need to actually try placing them on the map.
 
@@ -19,7 +19,7 @@ Once we have a collection of long label and shorter fallback label, we need to a
 * geometry_type/area_feature_label_rules.md
 * geometry_type/page_layout.md
 
-TYPE STYLES
+**TYPE STYLES**
 
 Use more than one font face, style, and size:
 
