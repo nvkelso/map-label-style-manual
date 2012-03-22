@@ -14,11 +14,11 @@ For multipart features:
 
 **Types of Features with Indeterminate Boundaries**
 
-Named Marine Water Bodies - Hydrography - Must Nest, No Overlaps
-Named Physiographic Features - Physiography - May Nest or Have Partial Overlaps
-Named Islands and Island Chains and Groups - Physiography and Hydrography - Must Nest, No Overlaps
-Neighborhoods and Districts, Vernacular Regions - Cultural and Transportation - May Nest or Have Partial Overlaps
-Land Cover, Geology, Soils and Other Overlays - Overlays - No Overlaps
+1. Named Marine Water Bodies - Hydrography - Must Nest, No Overlaps
+2. Named Physiographic Features - Physiography - May Nest or Have Partial Overlaps
+3. Named Islands and Island Chains and Groups - Physiography and Hydrography - Must Nest, No Overlaps
+4. Neighborhoods and Districts, Vernacular Regions - Cultural and Transportation - May Nest or Have Partial Overlaps
+5. Land Cover, Geology, Soils and Other Overlays - Overlays - No Overlaps
 
 **Feature Geometry Types**
 
