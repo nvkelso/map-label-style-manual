@@ -57,28 +57,27 @@ This logic is essentially first determining whether the shape is round-ish, and 
 
 **Label placement per feature type:**
 
-Round-ish
+1. Round-ish
+	
+	i.	Placement: Curved
 
-i.	Placement: Curved
+	ii.	May overrun by 36 pts 
 
-ii.	May overrun by 36 pts 
+	iii.	Allow asymmetric overrun = true
 
-iii.	Allow asymmetric overrun = true
+	iv.	Char. Space = up to 200% 
 
+	v.	Reduce font from 14 pts. to 10 pts. by 1 pt. increments 
 
-iv.	Char. Space = up to 200% 
+2. Oblong 
 
-v.	Reduce font from 14 pts. to 10 pts. by 1 pt. increments 
+	i. Placement: Curved 
 
-Oblong 
+	ii. May overrun by 12 pts 
 
-i. Placement: Curved 
+	iii. Char. Space = up to 300%
 
-ii. May overrun by 12 pts 
-
-iii. Char. Space = up to 300%
-
-Long
+3. Long
 
 i. Placement: Curved 
 
