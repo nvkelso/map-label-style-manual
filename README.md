@@ -21,7 +21,7 @@ Once we have a collection of long label and shorter fallback label, we need to a
 
 **TYPE STYLES**
 
-Use more than one font face, style, and size:
+Use more than one font face, style, size, and color:
 
 * Tk tk tk
 
