@@ -28,43 +28,89 @@ A set of seven feature types that are used to specify label classes and variatio
 **Calculating feature geometry types:**
 
 In order to create the information that is stored in these fields, a Python script was written and uses an ArcGIS 9.2 geoprocessing command called “GEOM- ETRY:HULLRECTANGLE”. This command returns a string containing the eight coordinates of the MBR. With these coordinates the RatioL2W and MBRArea field values can be set. The values for the LabelType field are set based on the following pseudo-code logic:
-If RatioL2W < 4 and MBRArea > 60% Label Type = “Roundish”Elseif RatioL2W < 8 and MBRArea > 25% LabelType = “Oblong”Elseif RatioL2W >= 8 and MBRArea > 10% LabelType = “Long”Elseif RatioL2W >= 8 and MBRArea <= 10% LabelType = “Long and Skinny”Else 
+If RatioL2W < 4 and MBRArea > 60% Label Type = “Roundish”
+Elseif RatioL2W < 8 and MBRArea > 25% LabelType = “Oblong”
+Elseif RatioL2W >= 8 and MBRArea > 10% LabelType = “Long”
+Elseif RatioL2W >= 8 and MBRArea <= 10% LabelType = “Long and Skinny”
+Else 
+
   If RatioL2W < 4 and MBRArea >= 20% Label type = “Splotch” 
+
   Elseif RatioL2W < 8 and MBRArea > 12% Label Type = “Snaky or Pronged” 
+
   Elseif RatioL2W < 8 and MBRArea <=12% Label Type = “Snaky or Pronged and Skinny”
+
 
 This logic is essentially first determining whether the shape is round-ish, and if not, if it is oblong or long, and if not, if it is a splotch, or snaky or pronged. The specific thresholds may need to be tuned to spe- cific cartographic requirements.
 
 **Label placement per feature type:**
 
-Round-ishi.	Placement: Curvedii.	May overrun by 36 pts iii.	Allow asymmetric overrun = trueiv.	Char. Space = up to 200% v.	Reduce font from 14 pts. to 10 pts. by 1 pt. increments 
-Oblong 
-i. Placement: Curved 
-ii. May overrun by 12 pts 
-iii.Char. Space = up to 300%
+Round-ish
+i.	Placement: Curved
+ii.	May overrun by 36 pts 
 
-Longi. Placement: Curved 
+iii.	Allow asymmetric overrun = true
+
+iv.	Char. Space = up to 200% 
+
+v.	Reduce font from 14 pts. to 10 pts. by 1 pt. increments 
+
+Oblong 
+
+i. Placement: Curved 
+
+ii. May overrun by 12 pts 
+
+iii. Char. Space = up to 300%
+
+Long
+i. Placement: Curved 
+
 ii. Try Horizontal First = true 
+
 iii. May Stack = true 
+
 iv. Character Spacing = up to 200%
 
-Long and Skinnyi. Placement: Boundary 
+Long and Skinny
+
+i. Placement: Boundary 
+
 ii. May Place Outside = true 
+
 iii. Offset = 4 pts 
+
 iv. Char. Space = up to 240% 
+
 v. Background Label = true
 
-Splotchi. Placement: Curved 
+Splotch
+
+i. Placement: Curved 
+
 ii. Char. Space = up to 300% 
+
 iii.Reduce Font from 14 pts. to 10 pts. by 1 pt. increments
-Snaky or Prongedi. Placement: Curved 
+Snaky or Pronged
+
+i. Placement: Curved 
+
 ii. May overrun by 12 pts 
+
 iii. Char. Space = up to 400%
 
 Snaky or Pronged and Skinny
-i.	Placement: Boundaryii.	May Place Outside = true 
-iii.	Offset = 4 ptsiv.	Char. Space = up to 240% 
+
+i.	Placement: Boundary
+
+ii.	May Place Outside = true 
+
+iii.	Offset = 4 pts
+
+iv.	Char. Space = up to 240% 
+
 v.	Background Label = true
+
 
 **Sources and further reading:**
 
