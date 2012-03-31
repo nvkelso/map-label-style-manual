@@ -6,9 +6,12 @@ When we cannot fit the full, formal name of feature we can often label a shorter
 
 For example: "USA" is an abbreviation of "United States of America".
 
-For over 3,000 abbreviations for general map features and roads specifically:
+For over 3,000 **abbreviations** for general map features and roads, and couple thousand **city nicknames** specifically:
 
-* abbreviations/abbreviations.ods
+* name_abbreviations/abbreviations.ods
+* name_abbreviations/abbreviations.tsv
+* name_nicknames/city_nicknames.tsv
+* name_nicknames/city_nicknames.readme
 
 **PLACEMENTS**
 
