@@ -21,53 +21,54 @@ Classification
 
 Examples:
 
-Broadway > B’way
-Fifth Avenue > 5th Av.
-Martin Luther King Jr. Way > M.L.K Way
+* Broadway > B’way
+* Fifth Avenue > 5th Av.
+* Martin Luther King Jr. Way > M.L.K Way
 
-Burgemeester Jonkheer Quarles van Uffordlaan > Burg.Jhr.Quarl. v Uffrdln.
-Jonkheer Meester G.W. Molleruslaan > Jhr.Mr.GW Moll.ln.
-Laan van de Mensenrechten > Ln. v/d Mensenr.
+* Burgemeester Jonkheer Quarles van Uffordlaan > Burg.Jhr.Quarl. v Uffrdln.
+* Jonkheer Meester G.W. Molleruslaan > Jhr.Mr.GW Moll.ln.
+* Laan van de Mensenrechten > Ln. v/d Mensenr.
 
 Warning:
 
 Beware of “pre-abbreviated” data
 
 Street name length vs street length
-•Calculate whether street is long enough for label
-•If not, use condensed font and/or more strict rules
-•2 or 3 levels
+* Calculate whether street is long enough for label
+* If not, use condensed font and/or more strict rules
+* 2 or 3 levels
 
 The Formula
 
 ( number of characters ) / ( street length / average letter width )
 
-If < 1 street is long enough for label
-If > 1 label is too long for street
+* If < 1 street is long enough for label
+* If > 1 label is too long for street
 
 Crookedness
 
-•Calculate circularity of convex hull? (lower = better)
-•Calculate point/length ratio? (higher = better)
-•Calculate angularity? (lower = better)
+* Calculate circularity of convex hull? (lower = better)
+* Calculate point/length ratio? (higher = better)
+* Calculate angularity? (lower = better)
 
 Crookedness, part 2
-•Stricter placement rules
-•Different font
-•Label on a generalized line
+
+* Stricter placement rules
+* Different font
+* Label on a generalized line
 
 Further work / Improvements:
 
-•Letter-width lookup table
-•Seamlessly combine all these methods
-•Find a way to measure good text placement
-•Extend to point and area features
+* Letter-width lookup table
+* Seamlessly combine all these methods
+* Find a way to measure good text placement
+* Extend to point and area features
 
 Solutions:
 
-Create more layers!
-•Pre-processing GIS data
-•Force software to act human
+* Create more layers!
+* Pre-processing GIS data
+* Force software to act human
 
 http://kelsocartography.com/presentations/2011/pcd_2011/hans_van_der_Maarel_Improve_text_placement_results_NACIS2011.pdf
 
