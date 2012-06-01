@@ -3,7 +3,9 @@ StreetNames
 
 `StreetNames` provides utility functions for handling street names.
 
-Current version is 0.1.1.
+Current version is 0.1.1. Install from PyPI with `pip`:
+
+    pip install StreetNames
 
 `short_street_name`
 ------------------
