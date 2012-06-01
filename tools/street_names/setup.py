@@ -8,6 +8,6 @@ setup(name='StreetNames',
       description='Utility functions for handling street names.',
       author='Michal Migurski',
       author_email='mike@stamen.com',
-      url='https://github.com/nvkelso/map-label-style-manual',
+      url='https://github.com/nvkelso/map-label-style-manual/tree/master/tools/street_names',
       packages=['StreetNames'],
       license='BSD')
