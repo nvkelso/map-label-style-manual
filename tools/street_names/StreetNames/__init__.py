@@ -23,8 +23,11 @@
 
 >>> short_street_name('Road Street North')
 'Road St N'
+
+>>> short_street_name('Parkway')
+'Parkway'
 """
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 _directions = {
     'north': 'N', 'northeast': 'NE',
@@ -53,18 +56,27 @@ _types = {
 def short_street_name(long_name):
     """ Shorten a long street name, e.g. "Main Street" to "Main St".
     """
-    parts = long_name.split()
-    keys = long_name.lower().split()
+    parts = long_name.strip().split()
+    keys = long_name.strip().lower().split()
     
-    if keys[0] in _directions and keys[-1] in _types and len(parts) >= 3:
+    if len(parts) >= 3 and keys[0] in _directions and keys[-1] in _types:
+        #
+        # like "North Herp Derp Road"
+        #
         parts[0] = _directions[keys[0]]
         parts[-1] = _types[keys[-1]]
     
-    elif keys[-2] in _types and keys[-1] in _directions and len(parts) >= 3:
+    elif len(parts) >= 3 and keys[-2] in _types and keys[-1] in _directions:
+        #
+        # like "Herp Derp Road North"
+        #
         parts[-2] = _types[keys[-2]]
         parts[-1] = _directions[keys[-1]]
     
-    elif keys[-1] in _types and len(parts) >= 2:
+    elif len(parts) >= 2 and keys[-1] in _types:
+        #
+        # like "Herp Derp Road"
+        #
         parts[-1] = _types[keys[-1]]
     
     return ' '.join(parts)
