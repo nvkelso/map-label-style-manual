@@ -24,7 +24,7 @@
 >>> short_street_name('Road Street North')
 'Road St N'
 """
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 _directions = {
     'north': 'N', 'northeast': 'NE',
