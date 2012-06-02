@@ -30,7 +30,7 @@
 >>> short_street_name('Parkway')
 'Parkway'
 """
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 _directions = {
     'north': 'N', 'northeast': 'NE',
@@ -39,8 +39,8 @@ _directions = {
     'west': 'W',  'northwest': 'NW',
     'n': 'N', 'ne': 'NE',
     'e': 'E', 'se': 'SE',
-    'e': 'S', 'sw': 'SW',
-    'w': 'W', 'ne': 'NW'
+    's': 'S', 'sw': 'SW',
+    'w': 'W', 'nw': 'NW'
 }
 
 _types = {
