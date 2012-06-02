@@ -3,6 +3,9 @@
 >>> short_street_name('Wodehouse Avenue')
 'Wodehouse Ave.'
 
+>>> short_street_name('Wodehouse Rd')
+'Wodehouse Rd.'
+
 >>> short_street_name('Wodehouse Street North')
 'Wodehouse St. N'
 
@@ -15,10 +18,10 @@
 >>> short_street_name('North Expressway Northeast')
 'North Expwy. NE'
 
->>> short_street_name('Southwest North Lane')
+>>> short_street_name('SW North Lane')
 'SW North Ln.'
 
->>> short_street_name('Street Drive')
+>>> short_street_name('Street Dr')
 'Street Dr.'
 
 >>> short_street_name('Road Street North')
@@ -27,30 +30,50 @@
 >>> short_street_name('Parkway')
 'Parkway'
 """
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 _directions = {
     'north': 'N', 'northeast': 'NE',
     'east': 'E',  'southeast': 'SE',
     'south': 'S', 'southwest': 'SW',
-    'west': 'W',  'northwest': 'NW'
+    'west': 'W',  'northwest': 'NW',
+    'n': 'N', 'ne': 'NE',
+    'e': 'E', 'se': 'SE',
+    'e': 'S', 'sw': 'SW',
+    'w': 'W', 'ne': 'NW'
 }
 
 _types = {
+    'ave': 'Ave.',
     'avenue': 'Ave.',
+    'blvd': 'Blvd.',
     'boulevard': 'Blvd.',
     'court': 'Ct.',
+    'ct': 'Ct.',
+    'dr': 'Dr.',
     'drive': 'Dr.',
     'expressway': 'Expwy.',
+    'expwy': 'Expwy.',
+    'freeway': 'Fwy.',
+    'fwy': 'Fwy.',
     'highway': 'Hwy.',
+    'hwy': 'Hwy.',
     'lane': 'Ln.',
+    'ln': 'Ln.',
     'parkway': 'Pkwy.',
+    'pkwy': 'Pkwy.',
+    'pl': 'Pl.',
     'place': 'Pl.',
+    'rd': 'Rd.',
     'road': 'Rd.',
+    'st': 'St.',
     'street': 'St.',
+    'ter': 'Ter.',
     'terrace': 'Ter.',
+    'tr': 'Tr.',
     'trail': 'Tr.',
     'way': 'Wy.',
+    'wy': 'Wy.',
 }
 
 def short_street_name(long_name):
