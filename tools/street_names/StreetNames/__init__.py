@@ -1,33 +1,33 @@
 """ Utility functions for handling street names.
 
 >>> short_street_name('Wodehouse Avenue')
-'Wodehouse Ave'
+'Wodehouse Ave.'
 
 >>> short_street_name('Wodehouse Street North')
-'Wodehouse St N'
+'Wodehouse St. N'
 
 >>> short_street_name('South Wodehouse Boulevard')
-'S Wodehouse Blvd'
+'S Wodehouse Blvd.'
 
 >>> short_street_name('East Highway')
-'East Hwy'
+'East Hwy.'
 
 >>> short_street_name('North Expressway Northeast')
-'North Expwy NE'
+'North Expwy. NE'
 
 >>> short_street_name('Southwest North Lane')
-'SW North Ln'
+'SW North Ln.'
 
 >>> short_street_name('Street Drive')
-'Street Dr'
+'Street Dr.'
 
 >>> short_street_name('Road Street North')
-'Road St N'
+'Road St. N'
 
 >>> short_street_name('Parkway')
 'Parkway'
 """
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 _directions = {
     'north': 'N', 'northeast': 'NE',
@@ -37,20 +37,20 @@ _directions = {
 }
 
 _types = {
-    'avenue': 'Ave',
-    'boulevard': 'Blvd',
-    'court': 'Ct',
-    'drive': 'Dr',
-    'expressway': 'Expwy',
-    'highway': 'Hwy',
-    'lane': 'Ln',
-    'parkway': 'Pkwy',
-    'place': 'Pl',
-    'road': 'Rd',
-    'street': 'St',
-    'terrace': 'Ter',
-    'trail': 'Tr',
-    'way': 'Wy',
+    'avenue': 'Ave.',
+    'boulevard': 'Blvd.',
+    'court': 'Ct.',
+    'drive': 'Dr.',
+    'expressway': 'Expwy.',
+    'highway': 'Hwy.',
+    'lane': 'Ln.',
+    'parkway': 'Pkwy.',
+    'place': 'Pl.',
+    'road': 'Rd.',
+    'street': 'St.',
+    'terrace': 'Ter.',
+    'trail': 'Tr.',
+    'way': 'Wy.',
 }
 
 def short_street_name(long_name):
