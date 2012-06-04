@@ -1,6 +1,6 @@
 ***Map Label Style Manual***
 
-#NAMES
+#Names
 
 When we cannot fit the full, formal name of feature we can often label a shorter version.
 
@@ -13,7 +13,7 @@ For over 3,000 **abbreviations** for general map features and roads, and couple 
 * name_nicknames/city_nicknames.tsv
 * name_nicknames/city_nicknames.readme
 
-#PLACEMENTS
+#Placements
 
 Once we have a collection of long label and shorter fallback label, we need to actually try placing them on the map.
 
@@ -22,13 +22,13 @@ Once we have a collection of long label and shorter fallback label, we need to a
 * geometry_type/area_feature_label_rules.md
 * geometry_type/page_layout.md
 
-#TYPE STYLES
+#Type Styles
 
 Use more than one font face, style, size, and color:
 
 * Tk tk tk
 
-#TOOLS
+#Tools
 
 We include several python scripts in the `tools` directory for implementing the label and abbreviation logic described in this repo.
 
@@ -46,6 +46,6 @@ We include several python scripts in the `tools` directory for implementing the 
 
 * [Webster's Geographical Dictionary](http://www.merriam-webster.com/cgi-bin/book.pl?geog.htm&9) - Convenient alphabetical listing of more than 54,000 entries
 
-#ABOUT
+#About
 
 By Nathaniel Vaughn Kelso with assists form Mike Migurski.
