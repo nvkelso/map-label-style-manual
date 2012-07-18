@@ -4,7 +4,7 @@ For multipart features:
 
 * If a single label per feature part, then that label should be near the centroid for the largest part.
 * If auto: also label extra parts that are above a certain size per the scale (zoom) of the map. (Can the label fit.)
-* If every part: each part's label should be near it's centroid.
+* If every part: each part's label should be near its centroid.
 
 **Big features:**
 
